@@ -1,1 +1,11 @@
 
+import turtle
+colors=['yellow','green','blue','white','red','cyan']
+sketch=turtle.Pen()
+turtle.bgcolor('black')
+sketch.speed(200)
+for i in range(200):
+    sketch.pencolor(colors[i%6])
+    sketch.width(i/100+2)
+    sketch.forward(i)
+    sketch.left(59)
